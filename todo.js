@@ -13,6 +13,7 @@ function add() {
     var task = document.getElementById('task').value;
     var todos = get_todos();
     todos.push(task);
+    
     localStorage.setItem('todo', JSON.stringify(todos));
  
     show();
@@ -33,14 +34,13 @@ function remove() {
  
 function show() {
    
-
     var todos = get_todos();
-    var title= document.getElementById('title');
-    document.write(title);
- 
+
+      
     var html = '<ul>';
     for(var i=0; i<todos.length; i++) {
-        html +=  '<li>' + todos[i] + '<button class="remove" id="' + i  + '">   x </button></li>';
+        html += 
+          '<li>' + todos[i] + '<button class="remove" id="' + i  + '">   x </button></li>';
     };
     html += '</ul>';
  

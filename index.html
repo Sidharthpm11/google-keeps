@@ -1,37 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  
+  <script src="todo.js"></script>
   <title>To Do List</title>
 </head>
+
 <body>
 
   <main>
     <div class="head">
       <nav class="navbar navbar-expand-lg  ">
         <a class="head-nav navbar-brand  ms-5" href="#">
-          <img class="logo" src="logo.png" alt="image"> 
+          <img class="logo" src="logo.png" alt="image">
           <h4 class="name">Keep</h4>
         </a>
       </nav>
     </div>
 
 
-    <div class="note-head" >
-         <input  class="title" type="text" placeholder="Title">
+    <div class="note-head">
+      <input class="note-title note-input" placeholder="Title" type="text">
+      <div class="note-list">
+
         <input class="note-text note-input" placeholder="Take a note..." type="text" id="task">
-<input type="button"  class="note-check" id="add">      
+        <input type="checkbox" class="note-check" name="" id="add">
+      </div>
     </div>
 
 
 
 
-    <div class="notes" id="todos">
-
+    <div class="note-area">
+      <div class="notes" id="todos">
     </div>
+
+
+
+    <!-- Previous code -->
 
 
     <div id="color-tooltip">
@@ -40,15 +49,9 @@
       <div class="color-option" data-color="#fbbc04" id="orange"></div>
       <div class="color-option" data-color="#a7ffeb" id="teal"></div>
     </div>
-
-    
-    
-
-    <script src="todo.js"></script>
-
-
   </main>
+
+  <script src="todo.js"></script>
 </body>
 
 </html>
-
