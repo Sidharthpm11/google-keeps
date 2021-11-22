@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="todo.js"></script>
+  
   <title>To Do List</title>
 </head>
 
@@ -22,22 +22,25 @@
     </div>
 
 
-    <div class="note-head">
-      <input class="note-title note-input" placeholder="Title" type="text">
-      <div class="note-list">
-
-        <input class="note-text note-input" placeholder="Take a note..." type="text" id="task">
-        <input type="button" class="note-check" name="" id="add">
-      </div>
+    
+    <div id="form-container">
+      <form id="form" autocomplete="off">
+        <input id="note-title" placeholder="Title" type="text">
+        <input id="note-text" placeholder="Take a note..." type="text">
+        <div id="form-buttons">
+          <button id="submit-button"></button>
+        </div>
+      </form>
+    </div>
+    <div id="notes"></div>
+    <div id="placeholder">
+      <img id="placeholder-logo" src="https://icon.now.sh/lightbulb_outline">
+      <p id="placeholder-text">Notes you add appear here</p>
     </div>
 
 
 
-
-    <div class="note-area">
-      <div class="notes" id="todos">
-    </div>
-
+    
 
 
     <!-- Previous code -->

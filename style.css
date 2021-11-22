@@ -41,68 +41,8 @@ font-weight: normal;
 
   }
 
-  .note-head {
-    /* display: flex; */
-    position: relative;
-    margin: 40px auto;
-    max-width: 600px;
-    /* width: 80%; */
-    /* height: 55px; */
-    border-radius: 8px;
-    min-width: 250px;
-
-    /* box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149); / */
-    /* padding: 10px; */
-
-
-
-  }
-  input {
-    border-top-style: hidden;
-    border-right-style: hidden;
-    border-left-style: hidden;
-    border-bottom-style: hidden;
-    /* background-color: #eee; */
-  }
-  
-  .no-outline:focus {
-    outline: none;
-  }
-  .note-input{
-outline: none;
-    color: black;
-    font: 13px/27px Arial,sans-serif;
-    /* box-sizing: border-box; */
-    /* position: relative; */
-    /* border-color:none; */
-    width: 100%;
-    /* box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149); */
-    /* border-radius: 8px; */
-     /* padding: 10px; */
-     height: 55px;
-
-    /* display: inline-block; */
-  }
-.note-list{
-  display: flex;
-}
-  .note-head  {
-    /* box-shadow: 0 4px 18px 0 rgba(0,0,0,0.2); */
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149);
-padding: 5px 20px;
-    transition: 0.3s;
-    width: 40%;
-  }
-  ::placeholder {
-   margin-top: 2px;
-  }
-  
-  /* .note-head :hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-  }
-   */
   #placeholder {
-    /* margin-top: 10vh !important; */
+    margin-top: 10vh !important;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -115,14 +55,14 @@ padding: 5px 20px;
     width: 120px;
   }
   
-  /* #placeholder-text {
+  #placeholder-text {
     color: #80868b;
     cursor: default;
     font-size: 1.375rem;
     font-weight: 400;
     line-height: 1.75rem;
   }
-   */
+  
   #form-container {
     border-radius: 8px;
     border: 0.5px solid #d3d3d3;
@@ -131,19 +71,19 @@ padding: 5px 20px;
     margin: 32px auto 16px auto;
     max-width: 496px;
     transition-duration: 0.218s;
-    transition-property:  border, opacity, box-shadow, transform;
+    transition-property: border, opacity, box-shadow, transform;
     transition-timing-function: ease-in;
   }
   
-  /* #form {
+  #form {
     position: relative;
     border: none;
     margin: 1px;
     border-radius: 8px;
     transition-duration: 0.218s;
-    transition-property: border, opacity, box-shadow, transform;
+    transition-property: background, border, opacity, box-shadow, transform;
     transition-timing-function: ease-in;
-  } */
+  }
   
   .form-open {
     box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
@@ -272,7 +212,7 @@ padding: 5px 20px;
   
   #submit-button {
     color: #fff;
-    background-color: #007bff;
+    background:url('/check.svg') no-repeat top left;
   }
   
   #submit-button:hover,
@@ -294,7 +234,7 @@ padding: 5px 20px;
     position: relative;
     border-radius: 8px;
     transition-duration: 0.218s;
-    transition-property: background, border, opacity, box-shadow, transform;
+    transition-property: border, opacity, box-shadow, transform;
     transition-timing-function: ease-in;
   }
   
@@ -403,7 +343,7 @@ padding: 5px 20px;
     height: 100%;
     background-color: rgba(229, 229, 229, 0.5);
     opacity: 0;
-    visibility: hidden; /* keeps modal closed unless clicked on */
+    visibility: hidden;
     transform: scale(1.1);
     transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
   }
@@ -467,53 +407,7 @@ padding: 5px 20px;
   #teal {
     background: #a7ffeb;
   }
-
-  .head {
-    
-    color: black;
-    font: 13px/27px Arial,sans-serif;
-    box-sizing: border-box;
-    position: relative;
-    width: 100%;
-    min-width: min-content;
-    border-radius: 8px;
-    box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149);
-    height: 65px;
-    /* display: inline-block; */
-  }
-  .head a{
-    
-    color: #5f6368;
-    opacity: 1;
-    font-family:Arial,sans-serif;
-    font-size: 22px;
-    line-height: 24px;
-    padding-left: 12px;
-    /* position: relative; */
-    top: -1.5px;
-   
-}
-.container{
-  min-width: 200px;
-}
- input:focus{
-  outline: none;
-}
-
-.note-area{
-  width: 80%;
-  margin: auto 10px;
-  justify-content: center;
-  text-align: center;
-}
-.note-check{
-  background: url('check.svg') no-repeat top left;
-  box-shadow: 0 1px 2px 0 rgba(60,64,67,0.302),0 2px 6px 2px rgba(60,64,67,0.149);
-  position: relative;
-  margin: auto -30px;
-  height: 20px;
-  width: 20px;
-}
-.note-title{
-  display: block;
-}
+ .head{
+  box-shadow: 0 1px 2px 0 rgba(60, 64, 67, 0.302),
+  0 1px 3px 1px rgba(60, 64, 67, 0.149);
+ } 
