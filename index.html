@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <script src="todo.js"></script>
+  
   <title>To Do List</title>
 </head>
 <body>
@@ -20,23 +20,19 @@
     </div>
 
 
-    <div class="note-head  ">
+    <div class="note-head" >
   
-        <input class="note-text note-input" placeholder="Take a note..." type="text">
-<input type="checkbox"  class="note-check"name="" id="">      
+        <input class="note-text note-input" placeholder="Take a note..." type="text" id="task">
+<input type="checkbox"   class="note-check" id="add">      
     </div>
 
 
 
-    
-  <div class="note-area">
-    <p>Notes Display here</p>
+    <div class="box">
+    <div class="notes" id="todos">
+
+    </div>
   </div>
-
-
-
-    <!-- Previous code -->
-
 
     <div id="color-tooltip">
       <div class="color-option" data-color="#fff" id="white"></div>
@@ -44,7 +40,15 @@
       <div class="color-option" data-color="#fbbc04" id="orange"></div>
       <div class="color-option" data-color="#a7ffeb" id="teal"></div>
     </div>
+
+    
+    
+
+    <script src="todo.js"></script>
+
+
   </main>
 </body>
 
 </html>
+
