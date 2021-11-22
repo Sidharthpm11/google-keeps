@@ -42,8 +42,8 @@ font-weight: normal;
   }
 
   .note-head {
-    display: flex;
-    position: relative;
+  
+
     margin: 40px auto;
     max-width: 600px;
     /* width: 80%; */
@@ -475,9 +475,9 @@ font-weight: normal;
   text-align: center;
 }
 .note-check{
-  position: relative;
+   justify-content: right;
+  display: flex;
   margin: auto -30px;
   height: 20px;
   width: 20px;
 }
-
